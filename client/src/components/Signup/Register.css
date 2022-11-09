@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: montserrat, sans-serif;
+}
+
+/* .App {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #53565A;
+} */
+
+
+.register form {
+    display: flex;
+    justify-content: center;
+}
+
+.register form section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 50%;
+    text-align: start;
+}
+
+.register form .photo-container img {
+    width: 100%;
+    max-height: 1000px;
+}
+
+.register form .form-inner {
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    padding: 10px;
+    z-index: 2;
+    height: auto;
+}
+
+.register form .profile {
+    position: relative;
+    display: block;
+    background-color: #FFF;
+    padding: 10px;
+    z-index: 2;
+    height: auto;
+}
+
+.register form .profile input {
+    background-color: #F8F8F8;
+}
+
+.register form .form-inner .form-group {
+    display: block;
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+}
+
+
+
+.register form .form-inner h1 {
+    color: #666;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+
+form .form-inner .form-group input {
+    display: block;
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 0px;
+    height: 35px;
+    text-align: left;
+    text-indent: 7%;
+    width: 100%;
+    background-color: #DCDCDC;
+}
+
+form .form-inner input[type=submit] {
+    color: #666;
+    font-size: 17px;
+    width: 120px;
+    /* padding-top: 25px; */
+    border: solid 1px #DCDCDC;
+    margin-top: 35px;
+    /* width: 7%; */
+}
+
+
+/*-------- Multiple-input-container --------*/
+
+form .form-inner .multiple-input-container {
+    display: flex;
+    flex-direction: row;
+}
+
+form .form-inner input::-webkit-outer-spin-button,
+form .form-inner input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+form .form-inner .multiple-input-container input::placeholder {
+    text-align: center;
+}
+
+form .form-inner .multiple-input-container input[type=radio] {
+    display: none;
+}
+
+form .form-inner input[type=radio]:checked + label {
+    border: solid 2px #ffafc7;
+}
+
+.form-inner .form-group .multiple-input-container label {
+    display: block;
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    text-indent: -15%;
+    width: 100%;
+    border: solid 1px #ABB2B9;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.form-inner .form-group .multiple-input-container input {
+    text-align: center;
+}

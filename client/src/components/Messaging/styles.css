@@ -1,0 +1,115 @@
+.col {
+    border: 10px solid red;
+}
+
+.MessagingPage {
+    height: 91.7%;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.inbox {
+    text-align: center;
+    border-left: 0.1px solid hsl(350, 78%, 92%);
+    border-right: 0.1px solid hsl(350, 78%, 92%);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 11;
+}
+
+.chat-history {
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    overflow-y: auto;
+}
+
+.chat-history-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    gap: 1.5rem 0;
+    padding-top: 2%;
+}
+
+.message-recv {
+    flex-basis: 50%;
+    text-align: left;
+    padding: 2%;
+    border-top: 0.5px solid hsl(350, 78%, 92%);
+    border-right: 0.5px solid hsl(350, 78%, 92%);
+    border-bottom: 0.5px solid hsl(350, 78%, 92%);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.break {
+    flex-basis: 100%;
+}
+
+.message-sent {
+    display: flex;
+    width: 100%;
+}
+
+.left-block {
+    flex-basis: 50%;
+}
+
+.msg {
+    flex-basis: 50%;
+    text-align: right;
+    padding: 2%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #f5acb7;
+}
+
+.message-input {
+    text-align: center;
+    border-top: 7px solid hsl(350, 78%, 92%);
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    padding: 2%;
+}
+
+p {
+    margin-bottom: 0.3rem;
+}
+
+input {
+    border-radius: 25px;
+    border: 0.1px solid black;
+    width: 80%;
+    padding: 0.5%;
+}
+
+.send-btn {
+    width: 10%;
+    height: 100%;
+    margin-left: 2%;
+    background-color: rgb(244, 172, 183) !important;
+    border: none !important;
+    border-radius: 25px !important;
+}
+
+.convo {
+    border: 1px solid black;
+}
+
+.active-convo {
+    background-color: #f5acb7;
+}
+
+.date-button {
+    padding: 2%;
+    border: none;
+    background: none;
+
+}
